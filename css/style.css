@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap"); /*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -88,4 +88,66 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1276px;
   margin: 0 auto;
   padding: 0px 15px;
+}
+
+.header {
+  padding: 10px 0px;
+  background: #000;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  border-radius: 45px;
+  background: #212121;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.header__item {
+  width: 160px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__item:last-child {
+  margin-right: 0px;
+  width: 140px;
+}
+.header__link {
+  letter-spacing: 0.235px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+  padding: 16px 35px;
+  border-radius: 45px;
+}
+.header__link:hover {
+  letter-spacing: 0px;
+  transition: 0.1s;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+}
+.header__nav-btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #fff;
+  background: #212121;
+  width: 160px;
+  height: 50px;
+  border-radius: 45px;
+}
+.header__nav-btn:hover {
+  transition: 0.1s;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border-radius: 45px;
 }
