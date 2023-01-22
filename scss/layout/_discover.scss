@@ -1,0 +1,72 @@
+.discover {
+  background: url(../images/fone-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  &__overlya {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 870px;
+    background:rgba(0, 0, 0, 0.614) ;
+  }
+
+
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+  }
+  
+  &__info {
+    padding-top: 146px;
+  }
+
+  &__title {
+    margin-bottom: 59px;
+    width: 549px;
+    span {
+      &:nth-child(1) {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 96px;
+        color: #D1D1D1;
+      }
+      &:nth-child(2) {
+        margin-left: 15px;
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 49px;
+        line-height: 96px;
+        color: #D1D1D1;
+      }
+      &:nth-child(3) {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 90px;
+        line-height: 119.5%;
+        color: #FFFFFF;
+      }
+    }
+   
+  }
+
+  &__text-info {
+    margin-bottom: 72px;
+    width: 611px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 127.5%;
+    color: #FFFFFF;
+
+  }
+
+  &__not-btn {
+  }
+}
