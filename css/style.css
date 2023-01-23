@@ -73,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -213,4 +217,32 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 17px;
   line-height: 127.5%;
   color: #FFFFFF;
+}
+.discover__not-btn {
+  position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 127.5%;
+  padding: 9px 30px;
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid #fff;
+}
+.discover__not-btn::before {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  content: "";
+  width: 337vw;
+  height: 1px;
+  background: #fff;
+}
+.discover__gallery {
+  position: relative;
+  z-index: -1;
+  border-radius: 20px;
+  border: 1px solid #000;
+  width: 810px;
+  background: #000;
 }

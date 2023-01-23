@@ -13,6 +13,14 @@
     background:rgba(0, 0, 0, 0.614) ;
   }
 
+  &__content {
+    
+  }
+
+
+  &__gallery {
+    
+  }
 
 
   &__inner {
@@ -68,5 +76,45 @@
   }
 
   &__not-btn {
+    position: relative;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 127.5%;
+    padding: 9px 30px;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #fff;
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      content: "";
+      width: 337vw;
+      height: 1px;
+      background: #fff;
+    }
+  }
+
+
+
+  &__gallery {
+    position: relative;
+    z-index: -1;
+    border-radius: 20px;
+    border: 1px solid #000;
+    width: 810px;
+    // filter: blur(10px);
+    background: #000;
+    // opacity: 0.6;
+    img {
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // filter: none;
+    }
+   
   }
 }
+
+
