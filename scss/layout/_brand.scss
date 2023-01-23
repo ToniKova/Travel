@@ -1,0 +1,14 @@
+.brand {
+  background: #B1B1B1;
+ 
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 0 38px;
+  }
+
+  &__img {
+  }
+}

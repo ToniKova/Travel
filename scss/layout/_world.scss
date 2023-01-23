@@ -1,0 +1,123 @@
+.world {
+  background: url('./../../images/world-fone.jpg');
+  height: 1298px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+
+
+
+  &__info-box{
+    padding-top: 79px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 0.01em;
+    margin-bottom: 29px;
+    color: #FFFFFF;
+    span {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 75px;
+      letter-spacing: 0.01em;
+      color: #03CEC9;
+    }
+  }
+
+  &__text {
+    
+    margin: 0px auto 42px auto;
+    width: 611px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 127.5%;
+    color: #FFFFFF;
+
+  }
+  &__form{
+    display: flex;
+    position: relative;
+    width: 503px;
+    height: 51px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 13px;
+ 
+
+
+  }
+
+  &__label {
+    padding: 0px 5px 0px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-left: 74px;
+    &::before {
+      position: absolute;
+      top: 16px;
+      left: 34px;
+      content: '';
+      width: 18px;
+      height: 18px;
+      display: block;
+      background-image: url('./../../images/input-img.svg');
+    }
+  }
+  &__input {
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #5e5e5e;
+    &::placeholder {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: #8A8A8A;
+
+    }
+  }
+
+  &__btn {
+    position: relative;
+    width: 49px;
+    height: 45px;
+    background: #1E1325;
+    border-radius: 11px;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size:20px;
+      content: '\1F86A';
+     
+    }
+  }
+
+ 
+
+  &__gallery-box {
+  }
+}
