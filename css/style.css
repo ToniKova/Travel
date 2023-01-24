@@ -260,6 +260,7 @@ body {
   align-items: center;
   padding: 38px 0 38px;
 }
+
 .world {
   background: url("./../../images/world-fone.jpg");
   height: 1298px;
@@ -377,6 +378,7 @@ body {
   border: 1px solid #fff;
   color: #fff;
   padding: 9px 30px;
+  margin-bottom: 76px;
 }
 .world__btn::before {
   position: absolute;
@@ -386,4 +388,28 @@ body {
   height: 1px;
   width: 100vw;
   background: #fff;
+}
+.world__gallery-box {
+  display: grid;
+  grid-template-columns: 610px 277px 314px 907px;
+  grid-template-rows: 372px 300px;
+  gap: 20px;
+}
+.world__gallery-box .gallery-item {
+  padding: 13px 16px;
+  border-radius: 10px;
+  background: rgba(254, 245, 245, 0.09);
+  backdrop-filter: blur(9px);
+  color: #fff;
+}
+.world__gallery-box .gallery-item img {
+  border-radius: 8px;
+}
+.world__gallery-box .gallery-item:nth-child(3) {
+  height: 693px;
+}
+.world__gallery-box .gallery-item:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 300px;
 }

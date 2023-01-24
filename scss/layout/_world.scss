@@ -124,6 +124,7 @@
     border: 1px solid #fff;
     color: #fff;
     padding: 9px 30px;
+    margin-bottom: 76px;
     &::before {
       position: absolute;
       content: '';
@@ -137,7 +138,29 @@
  
 
   &__gallery-box {
+    display: grid;
+    grid-template-columns: 610px 277px 314px 907px;
+    grid-template-rows: 372px 300px;
+    gap: 20px;
+    .gallery-item {
+      padding: 13px 16px;
+      border-radius: 10px;
+      background: rgba(254, 245, 245, 0.09);
+      backdrop-filter: blur(9px);
+      color: #fff;
+      img {
+        border-radius: 8px;
+      }
+      &:nth-child(3) {
+        height: 693px;
+      }
+      &:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 300px;
+      }
+    }
+   
   }
 }
 
-  
