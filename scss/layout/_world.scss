@@ -142,7 +142,8 @@
     grid-template-columns: 610px 277px 314px 907px;
     grid-template-rows: 372px 300px;
     gap: 20px;
-    .gallery__item {
+    margin-bottom: 50px;
+    .gallery {
       padding: 13px 16px;
       border-radius: 10px;
       background: rgba(254, 245, 245, 0.09);
@@ -158,6 +159,8 @@
         grid-column-start: 1;
         grid-column-end: 3;
         height: 300px;
+        display: flex;
+        align-items: center;
       }
 
       &__item-img {
@@ -166,15 +169,89 @@
       }
 
       &__title {
-        color: red;
+        margin-top: 10px;
+        margin-bottom: 22px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 34px;
+        letter-spacing: 0.01em;
+        color: #F3F3F3;
+       
+        
+      
       }
-    }
-    // .gallery-item-img {
-    //   max-width: 100%;
-    // }
 
+      &__like-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__item-name {
+        width: 100%;
+        padding-left: 20px;
+      }
+
+      &__desk {
+        padding-left: 30px;
+        position: relative;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #F3F3F3;
+        &::before {
+          content:'';
+          top: 0;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          display: block;
+          position: absolute;
+          background: url('../../images/location-img.svg');
+        }
+      }
+      span {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #494949;
+        &::before {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          content:'';
+          width: 22.95px;
+          height: 22.95px;
+          display: block;
+          position: absolute;
+          background-image: url('../../images/heart.svg');
+        }
+
+      }
+      
+    }
     
-   
+  }
+  
+  &__more-btn {
+    display:block;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+
   }
 }
 
