@@ -395,21 +395,27 @@ body {
   grid-template-rows: 372px 300px;
   gap: 20px;
 }
-.world__gallery-box .gallery-item {
+.world__gallery-box .gallery__item {
   padding: 13px 16px;
   border-radius: 10px;
   background: rgba(254, 245, 245, 0.09);
   backdrop-filter: blur(9px);
   color: #fff;
 }
-.world__gallery-box .gallery-item img {
+.world__gallery-box .gallery__item img {
   border-radius: 8px;
 }
-.world__gallery-box .gallery-item:nth-child(3) {
+.world__gallery-box .gallery__item:nth-child(3) {
   height: 693px;
 }
-.world__gallery-box .gallery-item:nth-child(4) {
+.world__gallery-box .gallery__item:nth-child(4) {
   grid-column-start: 1;
   grid-column-end: 3;
   height: 300px;
+}
+.world__gallery-box .gallery__item__item-img {
+  max-width: 100%;
+}
+.world__gallery-box .gallery__item__title {
+  color: red;
 }

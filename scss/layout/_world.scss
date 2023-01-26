@@ -142,7 +142,7 @@
     grid-template-columns: 610px 277px 314px 907px;
     grid-template-rows: 372px 300px;
     gap: 20px;
-    .gallery-item {
+    .gallery__item {
       padding: 13px 16px;
       border-radius: 10px;
       background: rgba(254, 245, 245, 0.09);
@@ -159,7 +159,21 @@
         grid-column-end: 3;
         height: 300px;
       }
+
+      &__item-img {
+        max-width: 100%;
+
+      }
+
+      &__title {
+        color: red;
+      }
     }
+    // .gallery-item-img {
+    //   max-width: 100%;
+    // }
+
+    
    
   }
 }
