@@ -164,7 +164,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: calc(100vh - 70px);
+  height: 805px;
   position: relative;
 }
 .discover::after {
@@ -560,4 +560,88 @@ body {
   font-size: 13px;
   line-height: 127.5%;
   color: #FFFFFF;
+}
+
+.flight {
+  background-color: #272727;
+}
+.flight__content {
+  flex: 0 0 100%;
+}
+.flight__body {
+  padding: 37px 0 0 0;
+  width: 50%;
+}
+.flight__titel {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 51px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+.flight__titel span {
+  color: #009490;
+  font-weight: 600;
+}
+.flight__images img {
+  max-width: 100%;
+}
+.flight__form-box {
+  width: 551px;
+  padding: 43px 66px 26px 66px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='25' ry='25' stroke='white' stroke-width='1' stroke-dasharray='17%2c17' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 25px;
+}
+.flight__form .form-label {
+  padding-left: 34px;
+  position: relative;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+.flight__form .form-label:before {
+  top: 3px;
+  left: 0;
+  content: "";
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background: #272727;
+  border: 1px solid #fff;
+}
+.flight__form .form-label:after {
+  top: 7px;
+  left: 4px;
+  content: "";
+  width: 14px;
+  height: 14px;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #009490;
+}
+.flight__form .radio-input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+@media (min-width: 767px) {
+  .flight {
+    display: flex;
+  }
+  .flight__images {
+    position: relative;
+    flex: 0 0 50%;
+    transform: translate(-100%, 0%);
+  }
 }

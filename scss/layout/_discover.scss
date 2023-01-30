@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: calc(100vh - 70px);
+  // min-height: calc(100vh - 70px);
+  height: 805px;
   position: relative;
   &::after {
     content: "";
