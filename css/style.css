@@ -262,7 +262,7 @@ body {
 }
 
 .world {
-  background: url("./../../images/world-fone.jpg");
+  background: url("../images/world-fone.jpg");
   height: 1298px;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ body {
   height: 24px;
   display: block;
   position: absolute;
-  background: url("../../images/location-img.svg");
+  background: url("../images/location-img.svg");
 }
 .world__gallery-box .gallery span {
   position: relative;
@@ -476,7 +476,7 @@ body {
   height: 22.95px;
   display: block;
   position: absolute;
-  background-image: url("../../images/heart.svg");
+  background-image: url("../images/heart.svg");
 }
 .world__more-btn {
   display: block;

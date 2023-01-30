@@ -1,5 +1,5 @@
 .world {
-  background: url('./../../images/world-fone.jpg');
+  background: url('../images/world-fone.jpg');
   height: 1298px;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,7 +212,7 @@
           height: 24px;
           display: block;
           position: absolute;
-          background: url('../../images/location-img.svg');
+          background: url('../images/location-img.svg');
         }
       }
       span {
@@ -230,7 +230,7 @@
           height: 22.95px;
           display: block;
           position: absolute;
-          background-image: url('../../images/heart.svg');
+          background-image: url('../images/heart.svg');
         }
 
       }
