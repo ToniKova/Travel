@@ -333,7 +333,7 @@ body {
   width: 18px;
   height: 18px;
   display: block;
-  background-image: url("./../../images/input-img.svg");
+  background-image: url("../images/input-img.svg");
 }
 .world__input {
   width: 100%;
