@@ -172,40 +172,76 @@
         </div>
       </section>
       <section class="flight">
-        <!-- <div class="flight__images">
-          <img src="images/flight-img.jpg" alt="images">
-        </div> -->
-        <div class="flight__content">
-          <div class="flight__container">
-            <div class="flight__body">
-              <h3 class="flight__titel">
-                Book a <span>Flight</span> With Us Today
-              </h3>
-              <div class="flight__form-box">
+        <div class="flight__max-conteiner">
+          <div class="flight__inner">
+            <div class="flight__images">
+              <img src="images/flight-images-00.jpg" alt="images">
+            </div>
+            <div class="flight__flight-container">
+              <div class="flight__body">
+                <div class="flight__box-title">
+                  <h3 class="flight__titel">
+                    Book a <span>Flight</span> With Us Today
+                  </h3>
+                </div>
                 <form class="flight__form">
-                  <label class="form-label"  for="label-1">
+                  <div class="form-radio">
                     <input 
                     name="male"
                     id="label-1"
                     class="radio-input" 
                     type="radio">
-                    One way
-                  </label>
-                  <label class="form-label" for="label-2">
+                    <label class="form-label" for="label-1">
+                      One way
+                    </label> 
                     <input
                     name="male" 
                     id="label-2" 
                     class="radio-input" 
                     type="radio">
-                    Round Trip
-                  </label>
+                    <label class="form-label" for="label-2">
+                      Round Trip
+                    </label>
+                  </div>
+                  <div class="input-location">
+                    <input 
+                    class="input-from"
+                    placeholder="Leaving from..."
+                    type="text">
+                  </div>
+                  <div class="input-location">
+                    <input 
+                    class="input-going"
+                    placeholder="Going to..."
+                    type="text">
+                  </div>
+                  <div class="form-calendar">
+                    <input 
+                    class="input-data"
+                    placeholder="Depart"
+                    type="text">
+                    <input 
+                    class="input-data"
+                    placeholder="Return"
+                    type="text">
+                  </div>
+                  <div class="form-select">
+                    <select class="select-passengers" name="" id="">
+                      <option value="1">1 passengers</option>
+                      <option value="2">2 passengers</option>
+                    </select>
+                    <select class="selec-class" name="" id="">
+                      <option value="1">1st Class</option>
+                      <option value="2">2st Class</option>
+                    </select>
+                  </div>
+                  <div class="form-box-btn">
+                    <button type="button">Search Available Flights</button>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
-        </div>
-        <div class="flight__images">
-          <img src="images/flight-img-2.jpg" alt="images">
         </div>
       </section>
     </main>
@@ -216,6 +252,38 @@
     
     
     <script src="js/main.js"></script>
+    <!-- <div class="flight__content">
+    <div class="flight__container">
+      <div class="flight__body">
+        <h3 class="flight__titel">
+          Book a <span>Flight</span> With Us Today
+        </h3>
+        <div class="flight__form-box">
+          <form class="flight__form">
+            <label class="form-label"  for="label-1">
+              <input 
+              name="male"
+              id="label-1"
+              class="radio-input" 
+              type="radio">
+              One way
+            </label>
+            <label class="form-label" for="label-2">
+              <input
+              name="male" 
+              id="label-2" 
+              class="radio-input" 
+              type="radio">
+              Round Trip
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flight__images">
+    <img src="images/flight-img-2.jpg" alt="images">
+  </div> -->
   </div>
 </body>
 </html>
