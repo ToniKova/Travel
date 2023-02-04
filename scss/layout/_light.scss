@@ -268,14 +268,40 @@
 }
 
 
+.input-location {
+  position: relative;
+  &::before {
+    content: '';
+    width: 24px ;
+    height: 24px;
+    display: block;
+    background: url('../images/location-img.svg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+}
+
 .input-from {
   width: 100%;
   background: transparent;
   border: 3px solid #494747;
   border-radius: 8px;
-  padding: 11px;
+  padding: 11px 11px 11px 65px;
   color: #C6C6C6;
   font-size: 15px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 24px ;
+    height: 24px;
+    display: block;
+    background: url('../images/location-img.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   &::placeholder {
     font-family: 'Poppins';
@@ -297,7 +323,7 @@
   background: transparent;
   border: 3px solid #494747;
   border-radius: 8px;
-  padding: 11px;
+  padding: 11px 11px 11px 65px;
   color: #C6C6C6;
   font-size: 15px;
 
@@ -319,14 +345,30 @@
 
 }
 
-.form-calendar {
-  margin-bottom: 27px;
+.calendar-box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.form-calendar {
   color: #C6C6C6;
+  position: relative;
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url('../images/form-icon.svg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+
 }
 .input-data {
-  text-align: center;
+  padding-left:71px;
   width: 184px;
   height: 45px;
   background: transparent;
@@ -335,15 +377,47 @@
   border-radius: 8px;
 
 }
-.form-select {
+
+.form-select-box {
   display: flex;
   justify-content: space-between;
   margin-bottom: 47px;
 
 }
+
+.form-select-pas {
+  position: relative;
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url('../images/passengers-icon.svg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+}
+
+.form-select-class {
+  position: relative;
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url('../../images/form-star-icon.svg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+}
+
 .select-passengers {
+  padding-left: 50px;
   font-family: 'Poppins';
-  text-align: center;
   width: 184px;
   height: 45px;
   background: transparent;
@@ -353,9 +427,9 @@
   font-weight: 400;   
 }
 .selec-class {
+  padding-left: 61px;
   font-weight: 400;  
   font-family: 'Poppins';
-  text-align: center;
   width: 184px;
   height: 45px;
   background: transparent;
@@ -370,7 +444,7 @@
   text-align: center;
   button {
     border-radius: 5px;
-    background: #009490;
+    background: #006360;
     border: none;
     outline: none;
     width: 418px;
@@ -382,9 +456,7 @@
     line-height: 26px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
-    &:hover {
-      background: #03b4ae;
-    }
+    
     &:active {
       background: #037470;
     }
@@ -393,3 +465,5 @@
 
   }
 }
+
+
