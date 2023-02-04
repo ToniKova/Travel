@@ -813,7 +813,7 @@ body {
   width: 24px;
   height: 24px;
   display: block;
-  background: url("../../images/form-star-icon.svg");
+  background: url("../images/form-star-icon.svg");
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
