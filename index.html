@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <title>Document</title>
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__container">
         <div class="header__inner">
           <img src="images/LOGO.svg" alt="Logo">
@@ -34,7 +35,7 @@
           <button class="header__nav-btn">Join us</button>
         </div>
       </div>
-    </header>
+    </header> -->
     <main class="main">
       <section class="discover">
         <div class="discover__content">
@@ -339,11 +340,109 @@
         </div>
       </section>
       <section class="best">
-        <div class="best__conteiner">
+        <div class="best__container">
           <div class="best__inner">
-            <h3 class="best__title">
-              <span>Best</span> recommendations
-            </h3>
+            <div class="best__title-logo">
+              <img class="best__title-logo" src="images/best-logo.png" alt="Logo">
+              <h3 class="best__title">
+                <span>Best</span> recommendations
+              </h3>
+            </div>
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="best__slider-items">
+                    <div class="best__description-body">
+                      <h4 class="best__description-title">
+                        Forbidden City
+                      </h4>
+                      <div class="best__description-location">
+                        Beijing
+                      </div>
+                      <p class="best__description-text">
+                        The Forbidden City (Chinese: 紫禁城; pinyin: Zǐjìnchéng) is a palace complex in Dongcheng District, Beijing, China, at the center of the Imperial City of Beijing. It is surrounded by numerous opulent imperial gardens and temples including the 22 ha (54-acre) Zhongshan Park, the sacrificial Imperial Ancestral Temple, the 69 ha (171-acre) Beihai Park, and the 23 ha (57-acre) Jingshan ParkThe Forbidden City was constructed from 1406 to 1420, and was the former Chinese imperial palace and winter residence of the Emperor of China from the Ming dynasty (since the Yongle Emperor) to the end of the Qing dynasty, between 1420 and 1924.
+                      </p>
+                      <div class="best__description-box-btn">
+                        <button class="best__description-btn">
+                          Take a Tour
+                        </button>
+                      </div>
+                    </div>
+                    <div class="best__video-body">
+                      <video class="best__video-title" src="video/Video1.webm" controls width="930" height="460">
+                      </video>
+                    </div>
+                  </div>  
+                </div>
+                <div class="swiper-slide">
+                  <div class="best__slider-items">
+                    <div class="best__description-body">
+                      <h4 class="best__description-title">
+                        Forbidden City
+                      </h4>
+                      <div class="best__description-location">
+                        Beijing
+                      </div>
+                      <p class="best__description-text">
+                        The Forbidden City (Chinese: 紫禁城; pinyin: Zǐjìnchéng) is a palace complex in Dongcheng District, Beijing, China, at the center of the Imperial City of Beijing. It is surrounded by numerous opulent imperial gardens and temples including the 22 ha (54-acre) Zhongshan Park, the sacrificial Imperial Ancestral Temple, the 69 ha (171-acre) Beihai Park, and the 23 ha (57-acre) Jingshan ParkThe Forbidden City was constructed from 1406 to 1420, and was the former Chinese imperial palace and winter residence of the Emperor of China from the Ming dynasty (since the Yongle Emperor) to the end of the Qing dynasty, between 1420 and 1924.
+                      </p>
+                      <div class="best__description-box-btn">
+                        <button class="best__description-btn">
+                          Take a Tour
+                        </button>
+                      </div>
+                    </div>
+                    <div class="best__video-body">
+                      <video class="best__video-title" src="video/Video1.webm" controls width="930" height="460">
+                      </video>
+                    </div>
+                  </div> 
+                </div>
+                <div class="swiper-slide">
+                  <div class="best__slider-items">
+                    <div class="best__description-body">
+                      <h4 class="best__description-title">
+                        Forbidden City
+                      </h4>
+                      <div class="best__description-location">
+                        Beijing
+                      </div>
+                      <p class="best__description-text">
+                        The Forbidden City (Chinese: 紫禁城; pinyin: Zǐjìnchéng) is a palace complex in Dongcheng District, Beijing, China, at the center of the Imperial City of Beijing. It is surrounded by numerous opulent imperial gardens and temples including the 22 ha (54-acre) Zhongshan Park, the sacrificial Imperial Ancestral Temple, the 69 ha (171-acre) Beihai Park, and the 23 ha (57-acre) Jingshan ParkThe Forbidden City was constructed from 1406 to 1420, and was the former Chinese imperial palace and winter residence of the Emperor of China from the Ming dynasty (since the Yongle Emperor) to the end of the Qing dynasty, between 1420 and 1924.
+                      </p>
+                      <div class="best__description-box-btn">
+                        <button class="best__description-btn">
+                          Take a Tour
+                        </button>
+                      </div>
+                    </div>
+                    <div class="best__video-body">
+                      <video class="best__video-title" src="video/Video1.webm" controls width="930" height="460">
+                      </video>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div> -->
+              <div class="swiper-box-btn">
+                <button class="my-bnt-prev">prev</button>
+                <button class="my-bnt-next">next</button>
+              </div >
+              <!-- <div class="swiper-button-next"></div> -->
+            
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <div class="best__box-btn">
+              <button class="best__btn-prev"></button>
+              <button class="best__btn-next"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -355,40 +454,16 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- <div class="flight__content">
-    <div class="flight__container">
-      <div class="flight__body">
-        <h3 class="flight__titel">
-          Book a <span>Flight</span> With Us Today
-        </h3>
-        <div class="flight__form-box">
-          <form class="flight__form">
-            <label class="form-label"  for="label-1">
-              <input 
-              name="male"
-              id="label-1"
-              class="radio-input" 
-              type="radio">
-              One way
-            </label>
-            <label class="form-label" for="label-2">
-              <input
-              name="male" 
-              id="label-2" 
-              class="radio-input" 
-              type="radio">
-              Round Trip
-            </label>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="flight__images">
-    <img src="images/flight-img-2.jpg" alt="images">
-  </div> -->
   </div>
 </body>
 
 </html>
+
+
+
+
+
+
+

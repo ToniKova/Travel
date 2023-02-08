@@ -50,28 +50,29 @@
     position: relative;
   
     width: 363px;
-    // height: 583px;
+    height: 583px;
   
     background-color:#353434;
     background-clip: padding-box;
-    // border: 3px solid transparent;
+    border: 3px solid transparent;
     border: 3px solid #009490;
     border-radius: 10px;
+    z-index: 100;
     padding: 17px;
-    // &::before {
-    //   content: '';
+    &::before {
+      content: '';
   
-    //   top: 0px;
-    //   left: 0px;
-    //   right: 0px;
-    //   bottom: 0px;
-  
-    //   z-index: -1;
-    //   margin: -3px;
-    //   border-radius: 10px;
-    //   position: absolute;
-    //   background: linear-gradient(#009490,#FEFEFE,#006360);
-    // }
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      
+      z-index: -1;
+      margin: -5px;
+      border-radius: 10px;
+      position: absolute;
+      // background: linear-gradient(#009490,#FEFEFE,#006360);
+    }
   }
 
 
