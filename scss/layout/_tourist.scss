@@ -1,0 +1,125 @@
+.tourist {
+  background: url('../images/tourist-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
+  padding-top: 67px;
+
+  &__container {
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 81px;
+  }
+  
+
+  &__slider-content {
+    display: flex;
+  }
+
+  &__img {
+    img {
+      border-radius: 7px;
+    }
+  }
+
+  &__box-review {
+    margin-left: 79px;
+  }
+
+  &__user-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+
+  &__user-location {
+    padding-left: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #F3F3F3;
+    position: relative;
+    margin-bottom: 53px;
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../images/location-img.svg');
+    }
+  }
+
+  &__user-review {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 37px;
+
+  }
+
+
+  &__box-grade {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    align-items: center;
+    span {
+      margin-right: 5px;
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 25px;
+      letter-spacing: 0.01em;
+      color: #FFFFFF;
+    }
+  }
+
+
+  &__ladel {
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    z-index: 100;
+
+  }
+}
+
+
+.tourist__slider.swiper {
+  height: 100%;
+}
+
+
+.swiper-scrollbar {
+  background: red;
+}
+
