@@ -1,14 +1,20 @@
-new Swiper('.swiper', {
-  navigation: {
-    nextEl: '.best__btn-next',
-    prevEl: '.best__btn-prev'
-  },
-  simulateTouch: true,
-})
 
-// if (slider) {
-//   let slider1 = new Swiper('.swiper')
-// }
+/*==================================*/
+// Slider - 1
+const slider1 = document.querySelector('.best__slider-wrapper')
+
+if (slider1) {
+  let oneSwiper = new Swiper(slider1, {
+    slideClass : 'best__slider-item',
+    wrapperClass : 'best__slider-body',
+    navigation : {
+      nextEl: '.best__btn-next',
+      prevEl: '.best__btn-prev'
+    },
+  })
+}
+
+
 
 
 

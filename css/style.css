@@ -1142,18 +1142,22 @@ body {
 .best__video-item {
   padding: 0px 0px 50% 0px;
 }
-.best .video-z {
-  position: relative;
-  z-index: 10;
-}
 .best__box-btn {
   margin-left: 400px;
   display: flex;
   justify-content: center;
 }
-
-.swiper {
+.best__slider-body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.best__slider-item {
+  flex-shrink: 0;
+}
+.best__slider-wrapper {
   height: 538px;
+  overflow: hidden;
 }
 
 .best__btn-prev {
