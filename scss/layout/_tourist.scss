@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 720px;
+  // height: 100%;
   padding-top: 67px;
 
   &__container {
@@ -24,10 +25,6 @@
     margin-bottom: 81px;
   }
   
-
-  &__slider-content {
-    display: flex;
-  }
 
   &__img {
     img {
@@ -89,7 +86,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
+    padding-right: 30px;
     align-items: center;
     span {
       margin-right: 5px;
@@ -111,15 +108,91 @@
     z-index: 100;
 
   }
+
+
+  &__slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__slider-body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__slider-item {
+    flex-shrink: 0;
+    display: flex;
+  }
+
+  &__btn-next {
+    background-color: #009490;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    &:before {
+      content:'';
+      width: 24px;
+      height: 24px;
+      background: url('../images/right-icon.svg');
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:disabled {
+      background: #252525;
+      cursor: auto;
+    }
+  }
+  &__btn-prev {
+    background-color: #009490;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    &:before {
+      content:'';
+      width: 24px;
+      height: 24px;
+      background: url('../images/left-icon.svg');
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:disabled {
+      background: #252525;
+      cursor: auto;
+    }
+  }
+
+
+  &__navigetion {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    width: 760px;
+    bottom: 0;
+    right: 40px;
+  }
+}
+.tourist__scroll.swiper-scrollbar.swiper-scrollbar-horizontal {
+  background: rgb(255, 255, 255);
+  width: 752px;
+  position: absolute;
+  height: 5px;
+  right: 5px;
+  top: -5px;
+  
+}
+div.swiper-scrollbar-drag {
+  background: #006360;
 }
 
 
-.tourist__slider.swiper {
-  height: 100%;
-}
-
-
-.swiper-scrollbar {
-  background: red;
-}
 
